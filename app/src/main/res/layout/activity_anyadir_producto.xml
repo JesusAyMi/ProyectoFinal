@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:text="Nombre del Producto:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="25dp"
         android:text="Descripción del producto:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etNombreProducto" />
@@ -54,10 +54,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
         android:text="Añade una imagen:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etDescripcionProducto" />
+
+    <Button
+        android:id="@+id/btAnyadirProducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="25dp"
+        android:text="AÑADIR"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivProducto" />
 
     <ImageView
         android:id="@+id/ivProducto"
@@ -68,15 +78,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13"
         tools:srcCompat="@tools:sample/avatars" />
-
-    <Button
-        android:id="@+id/btAnyadirProducto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="30dp"
-        android:text="AÑADIR"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivProducto" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
